@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Gestión Agrícola Nacional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="bg-pastel-green text-dark py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" alt="Logo" style="max-height: 40px;">
+                    AgriControl
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cultivos">Cultivos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planificacion">Planificación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#departamentos">Departamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Login</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="registroDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Registro
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="registroDropdown">
+                                <a class="dropdown-item" href="registro-proveedor.html">Proveedor</a>
+                                <a class="dropdown-item" href="registro-vendedor.html">Vendedor</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section id="inicio" class="jumbotron bg-pastel-yellow">
+            <h1 class="display-4">Bienvenido a AgriControl</h1>
+            <p class="lead">Gestionando la agricultura de nuestra nación con eficiencia y conocimiento.</p>
+            <hr class="my-4">
+            <p>Explora datos de cultivos, planifica tus siembras y mantente informado sobre el sector agrícola.</p>
+            <a class="btn btn-pastel-blue btn-lg" href="#cultivos" role="button">Ver Cultivos Principales</a>
+        </section>
+
+        <section id="estadisticas" class="mt-4 bg-pastel-light-blue p-4 rounded">
+            <h2>Estadísticas de Producción (Hipotéticas)</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card bg-white shadow-sm rounded">
+                        <div class="card-body">
+                            <h4>Maíz</h4>
+                            <p class="lead">25,000 Toneladas <i class="fas fa-chart-bar text-success"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card bg-white shadow-sm rounded">
+                        <div class="card-body">
+                            <h4>Frijol</h4>
+                            <p class="lead">18,000 Toneladas <i class="fas fa-chart-bar text-warning"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card bg-white shadow-sm rounded">
+                        <div class="card-body">
+                            <h4>Quinua</h4>
+                            <p class="lead">12,000 Toneladas <i class="fas fa-chart-bar text-info"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-2"><small class="text-muted">Datos correspondientes a la última temporada de cosecha.</small></p>
+        </section>
+
+        <section id="cultivos" class="mt-4">
+            <h2>Cultivos Principales</h2>
+            <div class="card-deck">
+                <div class="card bg-pastel-orange">
+                    <img src="img/maizam.jpg" class="card-img-top" alt="Maíz Amarillo" style="max-height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maíz Amarillo</h5>
+                        <p class="card-text">Tiempo de cultivo: 150 días.</p>
+                        <p class="card-text"><small class="text-muted">Temporada: Lluviosa</small></p>
+                        <a href="https://eos.com/es/blog/cultivo-del-maiz/" class="btn btn-sm btn-pastel-purple">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="card bg-pastel-pink">
+                    <img src="img/frigolne.jpeg" class="card-img-top" alt="Frijol Negro" style="max-height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Frijol Negro</h5>
+                        <p class="card-text">Tiempo de cultivo: 90 días.</p>
+                        <p class="card-text"><small class="text-muted">Temporada: Seca</small></p>
+                        <a href="https://eos.com/es/blog/cultivo-de-frijol/" class="btn btn-sm btn-pastel-purple">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="card bg-pastel-blue">
+                    <img src="img/quinua.jpg" class="card-img-top" alt="Quinua Real" style="max-height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Quinua Real</h5>
+                        <p class="card-text">Tiempo de cultivo: 210 días.</p>
+                        <p class="card-text"><small class="text-muted">Temporada: Templada</small></p>
+                        <a href="https://cuidateplus.marca.com/alimentacion/nutricion/2016/07/08/quinoa-113544.html" class="btn btn-sm btn-pastel-purple">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planificacion" class="mt-4 bg-pastel-light-blue p-4 rounded">
+            <h2>Planificación de Siembra</h2>
+            <p>Ingrese las dimensiones de su terreno para obtener recomendaciones.</p>
+            <form class="form-inline" id="formPlanificacion">
+                <div class="form-group mr-2">
+                    <label for="longitudTerreno" class="mr-2">Longitud (metros):</label>
+                    <input type="number" class="form-control form-control-sm" id="longitudTerreno" placeholder="Ej: 100">
+                </div>
+                <div class="form-group mr-2">
+                    <label for="anchoTerreno" class="mr-2">Ancho (metros):</label>
+                    <input type="number" class="form-control form-control-sm" id="anchoTerreno" placeholder="Ej: 50">
+                </div>
+                <button type="button" class="btn btn-sm btn-pastel-green" onclick="mostrarRecomendacion()">Calcular Siembra</button>
+            </form>
+            <div id="resultadoSiembra" class="mt-3">
+                <div class="card bg-white shadow-sm rounded p-3">
+                    <p class="alert alert-info mb-0" id="mensajeRecomendacion">Aquí aparecerán las recomendaciones de siembra.</p>
+                    <ul class="list-unstyled mt-2" id="listaRecomendaciones" style="display: none;">
+                        <li><strong>Área del terreno:</strong> <span id="areaTerreno"></span> metros cuadrados.</li>
+                        <li><strong>Cultivo recomendado:</strong> <span id="cultivoRecomendado"></span></li>
+                        <li><strong>Densidad de siembra (aproximada):</strong> <span id="densidadSiembra"></span> plantas por metro cuadrado.</li>
+                        <li><strong>Rendimiento esperado (aproximado):</strong> <span id="rendimientoEsperado"></span> kg.</li>
+                        <li><a href="guia-siembra-recomendada.html" target="_blank">Ver guía detallada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="departamentos" class="mt-4">
+            <h2>Estado por Departamentos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-pastel-light-green shadow-sm rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">La Paz</h5>
+                            <p class="card-text">Cultivos principales: <img src="img/quinua.jpg" alt="Quinua" style="max-height: 20px; margin-right: 5px;"> Quinua, <img src="img/papa.jpg" alt="Papa" style="max-height: 20px; margin-right: 5px;"> Papa.</p>
+                            <p class="card-text"><small class="text-muted">Terrenos registrados: 1200</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-pastel-light-orange shadow-sm rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Santa Cruz</h5>
+                            <p class="card-text">Cultivos principales: <img src="img/frigolne.jpeg" alt="Soja" style="max-height: 20px; margin-right: 5px;"> Soja, <img src="img/maizam.jpg" alt="Maíz" style="max-height: 20px; margin-right: 5px;"> Maíz.</p>
+                            <p class="card-text"><small class="text-muted">Terrenos registrados: 2500</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-pastel-light-pink shadow-sm rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Cochabamba</h5>
+                            <p class="card-text">Cultivos principales: <img src="img/maizam.jpg" alt="Maíz" style="max-height: 20px; margin-right: 5px;"> Maíz, <img src="img/papa.jpg" alt="Papa" style="max-height: 20px; margin-right: 5px;"> Papa, <img src="img/hortalizas.jpg" alt="Hortalizas" style="max-height: 20px; margin-right: 5px;"> Hortalizas.</p>
+                            <p class="card-text"><small class="text-muted">Terrenos registrados: 1800</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login" class="mt-4 bg-pastel-light-yellow p-4 rounded">
+            <h2>Acceso de Usuarios</h2>
+            <div class="card bg-white shadow-sm rounded p-3">
+                <form>
+                    <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" class="form-control form-control-sm" id="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="contrasena">
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-pastel-blue">Iniciar Sesión</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pastel-grey py-3 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2025 AgriControl - Gestión Agrícola Nacional</p>
+            <div class="mt-2">
+                <a href="#" class="text-secondary mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-secondary mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-secondary mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function mostrarRecomendacion() {
+            const longitud = parseFloat(document.getElementById('longitudTerreno').value);
+            const ancho = parseFloat(document.getElementById('anchoTerreno').value);
+
+            if (!isNaN(longitud) && !isNaN(ancho) && longitud > 0 && ancho > 0) {
+                const area = longitud * ancho;
+                document.getElementById('areaTerreno').textContent = area.toFixed(2);
+
+                // Datos de ejemplo para la recomendación (esto sería más complejo en una aplicación real)
+                let cultivo = "Maíz";
+                let densidad = "6-8";
+                let rendimiento = "5000-7000 kg/ha";
+
+                if (area < 500) {
+                    cultivo = "Hortalizas (ej. lechuga, tomate)";
+                    densidad = "10-20";
+                    rendimiento = "Variable";
+                } else if (area >= 500 && area < 2000) {
+                    cultivo = "Frijol";
+                    densidad = "20-30";
+                    rendimiento = "1500-2500 kg/ha";
+                }
+
+                document.getElementById('cultivoRecomendado').textContent = cultivo;
+                document.getElementById('densidadSiembra').textContent = densidad;
+                document.getElementById('rendimientoEsperado').textContent = rendimiento;
+
+                document.getElementById('mensajeRecomendacion').style.display = 'none';
+                document.getElementById('listaRecomendaciones').style.display = 'block';
+            } else {
+                document.getElementById('mensajeRecomendacion').textContent = 'Por favor, ingrese dimensiones válidas para el terreno.';
+                document.getElementById('mensajeRecomendacion').style.display = 'block';
+                document.getElementById('listaRecomendaciones').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
